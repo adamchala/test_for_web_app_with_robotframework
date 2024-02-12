@@ -79,6 +79,7 @@ Fill Date
     [Arguments]    ${Day}    ${Month}    ${Year}
     Press Keys    ${Date Field}    CTRL+a+BACKSPACE
     Input Text    ${Date Field}     ${Day}.${Month}.${Year}
+    Press Keys    ${Date Field}    ESC
 
 Submit Form
     Click Button    ${Submit Button}
