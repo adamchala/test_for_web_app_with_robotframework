@@ -22,7 +22,7 @@ ${Other}    Other
 
 ${Date Field}    //input[@placeholder='DD.MM.YYYY']
 
-${Submit Button}    //button[@class='st-emotion-cache-19rxjzo ef3psqc12']
+${Submit Button}    //button[normalize-space()='Submit']
 
 ${First Name Validation}    (//div[@class='st-emotion-cache-1j6rxz7 e1eexb540'])[1]
 ${Last Name Validation}    (//div[@class='st-emotion-cache-1j6rxz7 e1eexb540'])[2]
