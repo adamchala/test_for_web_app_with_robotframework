@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    File with selectors and interaction for form app
 Library    SeleniumLibrary
 
 *** Variables ***

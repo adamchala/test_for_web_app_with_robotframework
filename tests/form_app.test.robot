@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    Test suit for Form App
 Library    SeleniumLibrary
 Resource    ../resources/resource.robot
 Resource    ../resources/form_app.robot
@@ -22,7 +23,7 @@ ${Wrong Mobile}    123
 
 *** Test Cases ***
 Form App Test
-    [Documentation]
+    [Documentation]    Positive test where every field is fill in
     Open Form App
     Am I On Form Page
     Fill First Name    ${First Name}
@@ -36,7 +37,7 @@ Form App Test
 
 
 Form App Empty First Name Field
-    [Documentation]
+    [Documentation]    Test form behavior when first name field is not fill in
     Open Form App
     Am I On Form Page
     Fill Last Name    ${Last Name}
@@ -49,7 +50,7 @@ Form App Empty First Name Field
 
 
 Form App Empty Last Name Field
-    [Documentation]
+    [Documentation]    Test form behavior when last name field is not fill in
     Open Form App
     Am I On Form Page
     Fill First Name    ${Last Name}
@@ -62,7 +63,7 @@ Form App Empty Last Name Field
 
     
 Form App Empty Email Field
-    [Documentation]
+    [Documentation]    Test form behavior when emile field is not fill in
     Open Form App
     Am I On Form Page
     Fill First Name    ${First Name}
@@ -75,7 +76,7 @@ Form App Empty Email Field
 
     
 Form App Wrong Value In Email Field
-    [Documentation]
+    [Documentation]    Test form behavior when emile has incorrect format
     Open Form App
     Am I On Form Page
     Fill First Name    ${First Name}
@@ -89,7 +90,7 @@ Form App Wrong Value In Email Field
 
     
 Form App Empty Mobile Field
-    [Documentation]
+    [Documentation]    Test form behavior when mobile field is not fill in
     Open Form App
     Am I On Form Page
     Fill First Name    ${First Name}
@@ -102,7 +103,7 @@ Form App Empty Mobile Field
 
     
 Form App Wrong Value In Mobile Field
-    [Documentation]
+    [Documentation]    Test form behavior when mobile has incorrect format
     Open Form App
     Am I On Form Page
     Fill First Name    ${First Name}
@@ -116,7 +117,7 @@ Form App Wrong Value In Mobile Field
 
     
 Form App Empty Gender Field
-    [Documentation]
+    [Documentation]    Test form behavior when any gender radio button is not checked
     Open Form App
     Am I On Form Page
     Fill First Name    ${First Name}
